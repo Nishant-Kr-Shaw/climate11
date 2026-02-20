@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Climate Visibility Prediction</title>
+    <link rel="stylesheet" href="../static/css/index_style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+
+<body>
+    <section>
+        <div class="container-fluid">
+            <div class="container">
+                <form action="/predict" method="post">
+                    <h1>
+                        <legend>
+                            <b> Climate Visibility Prediction
+                                </b> </legend>
+                    </h1>
+                    
+
+                        <div class="mb-3">
+                                        
+                            <label class="form-label"> <b>DRYBULBTEMPF</b></label>
+                            <input class="form-control" type="number" name="drybulbtempf" placeholder="Enter dry bulb temperature"
+                            />
+                        </div>
+
+                        <div class="mb-3">
+                                        
+                            <label class="form-label"> <b>RelativeHumidity</b></label>
+                            <input class="form-control" type="number" name="relativehumidity" placeholder="Enter relative humidity"
+                            />
+                        </div>
+
+                        <div class="mb-3">
+                                        
+                            <label class="form-label"> <b>WindSpeed</b></label>
+                            <input class="form-control" type="number" name="windspeed" placeholder="Enter wind speed"
+                            />
+                        </div>
+
+                        <div class="mb-3">
+                                        
+                            <label class="form-label"> <b>WindDirection</b></label>
+                            <input class="form-control" type="number" name="winddirection" placeholder="Enter wind direction"
+                            />
+                        </div>
+
+                        <div class="mb-3">
+                                        
+                            <label class="form-label"> <b>SeaLevelPressure</b></label>
+                            <input class="form-control" type="number" name="sealevelpressure" placeholder="Enter sea level pressure"
+                            />
+                        </div>
+
+
+                    
+                    <div class="mb-3">
+                        <input class="btn btn-primary" type="submit" value="Predict the Climate Visibility" required />
+                    </div>
+                </form>
+            </div>
+            <div class="text-center text-black">
+                <h2>Prediction : {{context}} </h2>
+            </div>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script type="text/javascript">
+        $(".input").focus(function () {
+            $(this).parent().addClass("focus");
+        }).blur(function () {
+            if ($(this).val() === '') {
+                $(this).parent().removeClass("focus");
+            }
+        })
+    </script>
+</body>
+
+</html>

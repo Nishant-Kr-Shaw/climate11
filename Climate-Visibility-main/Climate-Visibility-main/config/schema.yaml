@@ -1,0 +1,23 @@
+columns:
+  - DATE: Object
+  - VISIBILITY : FLOAT
+  - DRYBULBTEMPF: FLOAT
+  - WETBULBTEMPF: FLOAT
+  - DewPointTempF : FLOAT
+  - RelativeHumidity : FLOAT
+  - WindSpeed : FLOAT
+  - WindDirection : FLOAT
+  - StationPressure : FLOAT
+  - SeaLevelPressure : FLOAT
+  - Precip : FLOAT
+
+drop_columns:
+  - DATE 
+  - WETBULBTEMPF 
+  - DewPointTempF 
+  - StationPressure
+  - Precip
+
+outlier_columns:
+  - WindSpeed
+  - SeaLevelPressure

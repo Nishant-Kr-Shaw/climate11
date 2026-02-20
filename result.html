@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prediction Result</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #74ebd5, #ACB6E5);
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 100px auto;
+            padding: 40px;
+            background-color: #ffffffcc;
+            border-radius: 16px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        h1 {
+            color: #444;
+            margin-bottom: 20px;
+        }
+
+        .prediction {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #007acc;
+            margin-bottom: 30px;
+        }
+
+        a {
+            display: inline-block;
+            text-decoration: none;
+            background-color: #007acc;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        a:hover {
+            background-color: #005f99;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🌤️ Predicted Visibility</h1>
+        <div class="prediction">{{ prediction }} km</div>
+        <a href="/">← Back to Home</a>
+    </div>
+</body>
+</html>

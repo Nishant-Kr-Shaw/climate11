@@ -1,0 +1,105 @@
+
+model_selection:
+    model:
+      Linear Regression:
+        search_param_grid:
+          fit_intercept:
+            - True
+            - False
+          
+      Ridge Regression:
+        search_param_grid:
+          alpha:
+           - 0.001
+           - 0.01
+           - 0.1
+           - 1
+           - 10
+           - 100
+           - 1000
+
+      Lasso Regression:
+        search_param_grid:
+          alpha:
+            - 0.001
+            - 0.01
+            - 0.1
+            - 1
+            - 10
+            - 100
+            - 1000
+
+      Random Forest Regression:
+        search_param_grid:
+          n_estimators:
+           - 50 
+           - 100 
+           - 130 
+          max_depth:
+           - 10
+           - 20
+           - 30
+           
+          min_samples_split:
+           - 2
+           - 6
+           - 10
+          bootstrap:
+           - True
+           - False
+
+      Gradient Boosting Regression:
+        search_param_grid:
+          n_estimators:
+            - 50
+            - 100
+            - 150
+            - 200
+          max_depth:
+            - 3
+            - 5
+            - 7
+           
+      DecisionTreeRegressor:
+        search_param_grid:
+          criterion: 
+           - "mse"
+           - "friedman_mse" 
+           - "mae"
+          splitter: 
+           - "best" 
+           - "random"
+          max_features: 
+           - "auto" 
+           - "sqrt" 
+           - "log2"
+          max_depth: 
+           - 2
+           - 4
+           - 6
+           - 8
+           - 10
+           - 12
+           - 14
+           - 16
+          min_samples_split: 
+           - 2
+           - 4
+           - 6
+           - 8
+           - 10
+           - 12
+           - 14
+           - 16
+      
+
+          
+    
+
+
+
+           
+
+
+
+      

@@ -1,0 +1,18 @@
+columns:
+  - DATE: O
+  - DRYBULBTEMPF: float64
+  - WETBULBTEMPF: float64
+  - DewPointTempF : float64
+  - RelativeHumidity : float64
+  - WindSpeed : float64
+  - WindDirection : float64
+  - StationPressure : float64
+  - SeaLevelPressure : float64
+  - Precip : float64
+
+drop_columns:
+  - DATE 
+  - WETBULBTEMPF 
+  - DewPointTempF 
+  - StationPressure
+  - Precip

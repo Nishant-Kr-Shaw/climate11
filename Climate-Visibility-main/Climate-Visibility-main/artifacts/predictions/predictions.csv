@@ -1,0 +1,4 @@
+timestamp,model_path,inputs,error
+2026-02-18T23:10:13.622450,artifacts\prediction_model\model.pkl,"[('drybulbtempf', '25'), ('relativehumidity', ''), ('windspeed', ''), ('winddirection', ''), ('sealevelpressure', '')]",Error occurred python script name [prediction_pipeline.py] line number [68] error message [Failed to convert input values to numbers: could not convert string to float: '']
+2026-02-18T23:10:44.141066,artifacts\prediction_model\model.pkl,"[25.0, 10.0, 40.0, 180.0, 1015.0]",4.968935273374187
+2026-02-18T23:10:53.166732,artifacts\prediction_model\model.pkl,"[22.0, 55.0, 6.0, 150.0, 1012.0]",4.968935273374187
